@@ -12,7 +12,7 @@ Predictive analytics is an increasingly important tool in the healthcare field s
 
 I fit five different regression models (from the scikit-learn library) using default settings and compared the r-squared (R2) scores. The GradientBoostingRegressor took the win with an R2 score of ~37% with the testing set so I decided to focus on refining this particular ensemble model. The root mean squared error (RMSE) was used to compare the prediction model versus the industry standard average and median LOS metrics. The gradient boosting model RMSE is better by more than 24% (percent difference) versus the constant average or median models.
 
-<img src="images/RMSE.png" />
+<img src="images/RMSE_compare.png" />
 
 Another way I looked at the model was to plot the proportion of accurate predictions in the test set versus an allowed margin of error. Other studies qualify a LOS prediction as correct if it falls within a certain margin of error. It follows that as the margin of error allowance increases, so should the proportion of accurate predictions for all models. The gradient boosting prediction model performs better than the other constant models across the margin of error range up to 50%.
 
